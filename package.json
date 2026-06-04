@@ -1,0 +1,22 @@
+{
+  "name": "rc-sourcemap-repro",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "next build",
+    "build:rc": "REACT_COMPILER=true next build",
+    "build:no-rc": "REACT_COMPILER=false next build",
+    "inspect": "node inspect-sourcemap.mjs"
+  },
+  "dependencies": {
+    "next": "16.2.6",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.5",
+    "@types/react": "19.2.6",
+    "babel-plugin-react-compiler": "1.0.0",
+    "typescript": "5.7.3"
+  }
+}
